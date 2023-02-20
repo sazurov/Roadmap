@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+$ff:'Kanit', sans-serif;
+@media (max-width:1920px){
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  .inner{
+    width: 93em;
+    
+  }
+  .card {
+    width: 180px;
+    height: 100%;
+  }
+  .content p {
+    margin-left: 90px;
+    width: 160px;
+    font-size: 30px;
+  }
+ .Tittle {
+  margin-top: 400px;
+  font-size: 45px;
+ }
+ .contain {
+  width: 100%;
+  margin-top: 0%;
+ }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(19, 17, 17);
+}
+
+.contain { 
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.block {
+  border: solid rgb(235, 247, 12) 2px;
+  box-shadow: 1px 1px 1px 1px rgb(235, 247, 12);
+  width: 80%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.inner {
+  
+  padding: 20px;
+  scroll-behavior: smooth;
+  transition: 1s;
+  display:flex;
+  gap: 13em;
+  
+
+  .card { 
+    & img {
+
+      overflow-x: hidden;
+      margin-top: 20px;
+      margin-left: 25px;
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+    }
+    & p {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      font-size: 46px;
+      text-align: center;
+      color: rgba(253, 253, 253, 0.942);
+      font-family: $ff;
+    }
+  }
+}
+
+
+.arrow img{
+  margin-right: 100px;
+  width: 100px;
+  rotate: (180deg);
+  filter: invert(1);
+  border-radius: 2000px;
+}
+
+
+.arrow2 {
+  display: flex;
+  align-items: center;
+}
+.arrow2 input{
+  margin-left: 100px;
+  width: 100px;
+  filter: invert(1);
+  
+  border-radius: 2000px;
+}
+
+.nav {
+  gap: 40px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  button {
+    width: 250px;
+    font-size: 45px;
+    font-family: $ff;
+    height: 200px;
+    background-color:rgb(235, 247, 12) ;
+    border: none;
+    opacity: 0.9;
+    border-radius: 5px;
+    &:hover {
+      font-size: 48px;
+      transition: 0.2s ease-in-out;
+      opacity: 1;
+      box-shadow: 0 0 0 0.25 black;
+    }
+    &:active {
+      width: 240px;
+      height: 190px;
+    }
+  }
+}
+
+
+.Tittle {
+  display: flex;
+  justify-content: center;
+  color: antiquewhite;
+  font-size: 50px;
+  font-family: $ff;
+  margin-top: 5%;
+}
